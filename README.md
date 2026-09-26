@@ -9,7 +9,7 @@
 ![Year](https://img.shields.io/badge/Year-2026-gold)
 
 ## 📸 Live Proof - Sept 2026
-![Website Screenshot]<img width="1364" height="684" alt="image" src="https://github.com/user-attachments/assets/c9deeab9-ce8e-4a54-8377-4d83734865d6" />
+<img width="1364" height="684" alt="image" src="https://github.com/user-attachments/assets/c9deeab9-ce8e-4a54-8377-4d83734865d6" />
 *Successfully running on Firefox at http://akbarlinops.com*
 
 ## 🚀 About This Project
