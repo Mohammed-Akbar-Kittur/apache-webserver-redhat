@@ -34,8 +34,8 @@
 ### 📸 Live Output
 <img width="1366" height="690" alt="image" src="https://github.com/user-attachments/assets/f718b33a-0fd2-44cc-9122-b053b6c06f97" />
 
-- `http://192.168.15.10` - Working
-- `http://akbarlinops.com` - Working via local DNS
+- http://192.168.15.10 - Working
+- http://akbarlinops.com - Working via local DNS
 
 ---
 
