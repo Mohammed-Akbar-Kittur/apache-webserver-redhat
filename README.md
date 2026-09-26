@@ -16,39 +16,38 @@
 | **Access** | Root User |
 | **Package Manager** | yum |
 
+### 🛠️ Tech Stack
+
+| Layer | Technology Used |
+|-------|---|
+| **OS** | RedHat Enterprise Linux 9 |
+| **Web Server** | Apache HTTPD 2.4 |
+| **Frontend** | HTML5, CSS3 |
+| **Package Manager** | YUM |
+| **Networking** | Static IP 192.168.15.10, Port 80 |
+| **DNS** | Local DNS via hosts file |
+| **Security** | FirewallD |
+| **Version Control** | Git & GitHub |
+
 ---
 
 ### 📸 Live Output
+<img width="1366" height="690" alt="image" src="https://github.com/user-attachments/assets/f718b33a-0fd2-44cc-9122-b053b6c06f97" />
 
-<img width="1366" height="690" alt="image" src="https://github.com/user-attachments/assets/770a2421-a45e-4a87-b2d9-cbf14172a0be" />
-
-
-**Current Output:**
-- http://192.168.15.10 - Working (Your photo proof)
-- http://akbarlinops.com - Working via local DNS
-- Design: Black + Red Neon Card | Golden Heading | Green Name
+- `http://192.168.15.10` - Working
+- `http://akbarlinops.com` - Working via local DNS
 
 ---
 
-### ⚡ Setup Script
-
-> **Run as `root` on RHEL 9 - script **
+### ⚡ One-Click Setup Script
 
 ```bash
-#!/bin/bash
-# ---------------------------------------------------
-# Project: akbarlinops.com
-# Author: Mohammed Akbar Kittur
-# OS: RHEL 9 | Access: Root | Manager: yum
-# ---------------------------------------------------
-
 yum install httpd -y
 systemctl enable --now httpd
 firewall-cmd --permanent --add-service=http --add-service=https
 firewall-cmd --reload
 mkdir -p /var/www/akbarlinops.com && chmod -R 755 /var/www/akbarlinops.com
 
-# --- VirtualHost Config ---
 cat > /etc/httpd/conf.d/akbarlinops.com.conf <<'CONF'
 <VirtualHost *:80>
     ServerName akbarlinops.com
@@ -60,7 +59,6 @@ cat > /etc/httpd/conf.d/akbarlinops.com.conf <<'CONF'
 </VirtualHost>
 CONF
 
-# --- Website Code ---
 cat > /var/www/akbarlinops.com/index.html <<'HTML'
 <!DOCTYPE html>
 <html><head><title>akbarlinops.com</title>
@@ -82,4 +80,4 @@ HTML
 
 cp /var/www/akbarlinops.com/index.html /var/www/html/index.html
 systemctl restart httpd
-echo "192.168.15.10 akbarlinops.com"
+echo "✅ DONE: akbarlinops.com LIVE at 192.168.15.10"
