@@ -24,8 +24,8 @@
 
 
 **Current Output:**
-- ✅ `http://192.168.15.10` - Working (Your photo proof)
-- ✅ `http://akbarlinops.com` - Working via local DNS
+- http://192.168.15.10 - Working (Your photo proof)
+- http://akbarlinops.com - Working via local DNS
 - Design: Black + Red Neon Card | Golden Heading | Green Name
 
 ---
@@ -82,4 +82,4 @@ HTML
 
 cp /var/www/akbarlinops.com/index.html /var/www/html/index.html
 systemctl restart httpd
-echo "✅ DONE: akbarlinops.com LIVE at 192.168.15.10"
+echo "192.168.15.10 akbarlinops.com"
