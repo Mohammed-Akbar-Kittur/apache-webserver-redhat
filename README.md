@@ -30,9 +30,9 @@
 
 ---
 
-### ⚡ One-Click Setup Script
+### ⚡ Setup Script
 
-> **Run as `root` on RHEL 9 - Only ONE script needed**
+> **Run as `root` on RHEL 9 - script **
 
 ```bash
 #!/bin/bash
